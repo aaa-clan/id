@@ -1,34 +1,27 @@
-
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- 🔥 SEO UTAMA -->
+<!-- 🔥 SEO -->
 <title>AAA Clan Live Streaming Gaming Indonesia Hari Ini</title>
-<meta name="description" content="Nonton live streaming AAA Clan komunitas gaming Indonesia. Streaming setiap hari, turnamen esports, gameplay seru dan hiburan gamer Indonesia.">
-<meta name="keywords" content="AAA Clan, live streaming gaming Indonesia, komunitas game, esports Indonesia, streamer Indonesia">
+<meta name="description" content="Nonton live streaming AAA Clan komunitas gaming Indonesia. Streaming setiap hari, turnamen esports, gameplay seru.">
+<meta name="keywords" content="AAA Clan, live streaming gaming Indonesia, esports Indonesia, streamer Indonesia">
 <meta name="author" content="AAA Clan">
-
-<!-- 🔥 GOOGLE INDEX -->
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://aaa-clan.github.io/id/">
 
-<!-- 🔥 OPEN GRAPH -->
+<!-- OPEN GRAPH -->
 <meta property="og:title" content="AAA Clan Live Streaming">
-<meta property="og:description" content="Live streaming gaming Indonesia setiap hari.">
+<meta property="og:description" content="Live streaming gaming Indonesia setiap hari">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://aaa-clan.github.io/id/">
 
-<!-- 🔥 TWITTER -->
 <meta name="twitter:card" content="summary_large_image">
 
-<!-- 🔥 FAVICON -->
 <link rel="icon" href="https://aaa-clan.github.io/id/img/aaa-clan.png">
 
-<!-- 🔥 STRUCTURED DATA -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -43,30 +36,30 @@
 </script>
 
 <style>
+
+/* RESET */
 * {
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+/* BODY */
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(180deg, #020617, #020617, #020617);
+    background: #020617;
     color:#fff;
 }
 
 /* HEADER */
 header {
-    background: linear-gradient(90deg, #020617, #0f172a);
-    padding:20px;
     text-align:center;
+    padding:20px;
     border-bottom:2px solid #38bdf8;
-    box-shadow:0 0 20px rgba(56,189,248,0.2);
 }
 
 header h1 {
     color:#38bdf8;
-    font-size:32px;
 }
 
 /* NAV */
@@ -75,15 +68,11 @@ nav {
     justify-content:center;
     gap:25px;
     padding:12px;
-    background:#020617;
-    border-bottom:1px solid rgba(255,255,255,0.05);
 }
 
 nav a {
     color:#cbd5f5;
     text-decoration:none;
-    font-size:14px;
-    transition:0.3s;
 }
 
 nav a:hover {
@@ -97,268 +86,201 @@ nav a:hover {
     padding:20px;
 }
 
+/* TITLE */
+.main-title {
+    text-align:center;
+    margin:30px 0;
+    font-size:32px;
+}
+
 /* GRID */
 .grid {
     display:grid;
-    grid-template-columns: 3fr 1.2fr;
-    gap:25px;
+    grid-template-columns: 2fr 1fr;
+    gap:20px;
 }
 
-/* LIVE */
+/* VIDEO */
 .live {
     background:#020617;
     padding:15px;
     border-radius:12px;
-    box-shadow:0 0 25px rgba(56,189,248,0.15);
+    box-shadow:0 0 20px rgba(56,189,248,0.2);
 }
 
 .live h2 {
-    margin-bottom:15px;
     color:#ff4d4d;
-    font-size:22px;
-    font-weight:bold;
-    text-shadow:0 0 10px rgba(255,0,0,0.7);
+    margin-bottom:10px;
 }
 
-.live iframe {
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position:absolute;
     width:100%;
+    height:100%;
     border-radius:12px;
-    box-shadow:0 0 30px rgba(255,0,0,0.2);
 }
 
 /* SIDEBAR */
 .sidebar {
     display:flex;
     flex-direction:column;
-    gap:20px;
+    gap:15px;
 }
 
 /* CARD */
 .card {
     background:linear-gradient(145deg, #020617, #1e293b);
+    padding:15px;
+    border-radius:10px;
     border:1px solid rgba(56,189,248,0.2);
-    padding:18px;
-    border-radius:12px;
-    box-shadow:0 0 15px rgba(56,189,248,0.1);
-    transition:0.3s;
-}
-
-.card:hover {
-    transform:translateY(-3px);
-    box-shadow:0 0 25px rgba(56,189,248,0.3);
 }
 
 .card h2 {
-    margin-bottom:10px;
     color:#38bdf8;
+    margin-bottom:10px;
 }
 
 /* BUTTON */
-.btn-daftar {
+.btn {
     display:block;
     text-align:center;
-    margin-top:12px;
-    padding:12px;
-    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    padding:10px;
+    background:#38bdf8;
     color:#000;
-    font-weight:bold;
-    border-radius:8px;
+    border-radius:6px;
     text-decoration:none;
-    transition:0.3s;
-}
-
-.btn-daftar:hover {
-    transform:scale(1.05);
+    font-weight:bold;
 }
 
 /* CHAT */
 #chat-box {
-    font-size:13px;
+    height:200px;
+    overflow-y:auto;
+    background:#000;
+    padding:10px;
+    border-radius:6px;
+}
+
+/* INPUT */
+input {
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    border:none;
+    border-radius:5px;
+}
+
+button {
+    width:100%;
+    margin-top:5px;
+    padding:10px;
+    background:#38bdf8;
+    border:none;
+    font-weight:bold;
 }
 
 /* FOOTER */
 footer {
     text-align:center;
-    padding:25px;
-    border-top:1px solid rgba(255,255,255,0.1);
     margin-top:40px;
-    color:#94a3b8;
+    padding:20px;
+    color:#aaa;
 }
 
 /* RESPONSIVE */
 @media(max-width:900px){
-    .grid {grid-template-columns:1fr;}
-    .live iframe {height:300px;}
-}
+    .grid {
+        grid-template-columns:1fr;
+    }
 
-@media(max-width:480px){
-    header h1 {font-size:20px;}
-    nav a {font-size:12px;}
-    .live iframe {height:220px;}
-}
-.video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    height: 0;
-    overflow: hidden;
-    border-radius:12px;
-}
-
-.video-wrapper iframe {
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-}
-.live-dot {
-    display:inline-block;
-    width:10px;
-    height:10px;
-    background:red;
-    border-radius:50%;
-    margin-right:8px;
-    animation:blink 1s infinite;
-}
-
-@keyframes blink {
-    0% {opacity:1;}
-    50% {opacity:0.3;}
-    100% {opacity:1;}
-}
-.live {
-    margin-bottom: 20px;
-}
-.live {
-    max-width: 900px;
-    margin: 0 auto 20px auto;
-}
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 32px;
-}
-
-@media(max-width:768px){
-    h1 {
-        font-size: 22px;
+    .main-title {
+        font-size:22px;
     }
 }
-@media(max-width:480px){
-    .live {
-        max-width: 100%;
-    }
-}
+
 </style>
-
 </head>
 
 <body>
 
 <header>
     <h1>AAA Clan Official</h1>
-    <p>Komunitas Gaming & Live Streaming Indonesia</p>
+    <p>Komunitas Gaming Indonesia</p>
 </header>
 
 <nav>
-    <a href="/">Home</a>
+    <a href="#">Home</a>
     <a href="#live">Live</a>
     <a href="#tentang">Tentang</a>
 </nav>
 
 <div class="container">
 
-    <!-- 🔥 H1 SEO -->
-<h1>Live Streaming AAA Clan Hari Ini</h1>
+<h1 class="main-title">Live Streaming AAA Clan Hari Ini</h1>
 
-<!-- ✅ VIDEO DI BAWAH JUDUL -->
-<div class="live" id="live">
-    <h2><span class="live-dot"></span> Sedang Live Sekarang</h2>
+<div class="grid">
 
-    <div class="video-wrapper">
-        <iframe 
-            src="https://www.youtube.com/embed/A9AAHhYKHP0?autoplay=1&mute=1"
-            title="Live Streaming AAA Clan"
-            frameborder="0"
-            allow="autoplay; encrypted-media"
-            allowfullscreen>
-        </iframe>
+    <!-- VIDEO -->
+    <div class="live" id="live">
+        <h2>🔴 Sedang Live Sekarang</h2>
+
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/A9AAHhYKHP0"
+            allowfullscreen></iframe>
+        </div>
     </div>
-</div>
 
-<!-- ✅ KONTEN DI BAWAH VIDEO -->
-<div class="grid" style="margin-top:20px;">
-
-    <!-- SIDEBAR PINDAH KE SINI -->
+    <!-- SIDEBAR -->
     <div class="sidebar">
 
         <div class="card">
-            <h2>Jadwal Streaming</h2>
-            <p>Setiap hari 24 Jam</p>
+            <h2>Jadwal</h2>
+            <p>Setiap hari 24 jam</p>
         </div>
 
         <div class="card">
             <h2>Top Player</h2>
-            <p>YB</p>
-            <p>GA</p>
-            <p>JT</p>
-            <p>KA</p>
-            <p>YT</p>
-            <p>T46</p>
-            <p>DJ-B</p>
-            <p>NJ</p>
-            <p>IB</p>
+            <p>YB | GA | JT | KA | YT | T46</p>
         </div>
 
         <div class="card">
             <h2>Gabung Clan</h2>
-            <p>Join komunitas gaming terbaik Indonesia sekarang!</p>
-            <a href="https://rajapupuksawit.pro/win1131dc" class="btn-daftar">🔥 Daftar Sekarang</a>
+            <a href="#" class="btn">Daftar Sekarang</a>
         </div>
 
         <div class="card">
-            <h2>💬 Live Chat</h2>
-            <div id="chat-box" style="height:200px;overflow-y:auto;background:#020617;padding:10px;border-radius:8px;margin-bottom:10px;"></div>
+            <h2>Live Chat</h2>
 
-            <input type="text" id="username" placeholder="Nama..." style="width:100%;padding:8px;margin-bottom:5px;border-radius:5px;border:none;">
-            <input type="text" id="message" placeholder="Tulis pesan..." style="width:100%;padding:8px;border-radius:5px;border:none;">
-            
-            <button onclick="sendMessage()" style="margin-top:5px;width:100%;padding:10px;background:#38bdf8;border:none;border-radius:5px;color:#000;font-weight:bold;">
-                Kirim
-            </button>
+            <div id="chat-box"></div>
+
+            <input id="username" placeholder="Nama...">
+            <input id="message" placeholder="Tulis pesan...">
+            <button onclick="sendMessage()">Kirim</button>
         </div>
 
     </div>
 
 </div>
 
-    <!-- 🔥 KONTEN SEO -->
-    <div class="card" id="tentang" style="margin-top:20px;">
-        <h2>Tentang AAA Clan</h2>
-        <p>
-            AAA Clan adalah komunitas gaming Indonesia yang menghadirkan live streaming,
-            turnamen esports, dan hiburan gaming setiap hari. Dengan komunitas aktif dan
-            player berbakat, AAA Clan terus berkembang menjadi salah satu komunitas
-            gaming terbaik di Indonesia.
-        </p>
-
-        <h2>Live Streaming Gaming Indonesia Terbaik</h2>
-        <p>
-            Nikmati live streaming gaming Indonesia dengan kualitas terbaik hanya di AAA Clan.
-            Kami menghadirkan gameplay seru, tips bermain, hingga turnamen esports yang menarik.
-        </p>
-
-        <h3>Keunggulan AAA Clan</h3>
-        <p>
-            Streaming rutin, komunitas aktif, dan konten berkualitas tinggi menjadikan
-            AAA Clan pilihan utama gamer Indonesia.
-        </p>
-    </div>
+<!-- SEO CONTENT -->
+<div class="card" id="tentang" style="margin-top:20px;">
+    <h2>Tentang AAA Clan</h2>
+    <p>
+        AAA Clan adalah komunitas gaming Indonesia yang menghadirkan live streaming,
+        turnamen esports, dan konten gaming setiap hari.
+    </p>
+</div>
 
 </div>
 
 <footer>
-    <p>© 2026 AAA Clan - All Rights Reserved</p>
+    © 2026 AAA Clan
 </footer>
 
 <script>
@@ -372,21 +294,19 @@ async function sendMessage() {
     const username = document.getElementById("username").value;
     const message = document.getElementById("message").value;
 
-    if(username === "" || message === "") return alert("Isi dulu!");
+    if(!username || !message) return alert("Isi dulu!");
 
     await fetch("chat.php", {
         method: "POST",
-        headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
-        },
+        headers: {"Content-Type":"application/x-www-form-urlencoded"},
         body: `username=${username}&message=${message}`
     });
 
-    document.getElementById("message").value = "";
+    document.getElementById("message").value="";
     loadChat();
 }
 
-setInterval(loadChat, 2000);
+setInterval(loadChat,2000);
 loadChat();
 </script>
 
