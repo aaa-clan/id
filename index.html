@@ -227,6 +227,9 @@ footer {
     50% {opacity:0.3;}
     100% {opacity:1;}
 }
+.live {
+    margin-bottom: 20px;
+}
 </style>
 
 </head>
@@ -247,71 +250,68 @@ footer {
 <div class="container">
 
     <!-- 🔥 H1 SEO -->
-    <h1>Live Streaming AAA Clan Hari Ini</h1>
+<h1>Live Streaming AAA Clan Hari Ini</h1>
 
-    <div class="grid">
+<!-- ✅ VIDEO DI BAWAH JUDUL -->
+<div class="live" id="live">
+    <h2><span class="live-dot"></span> Sedang Live Sekarang</h2>
 
-        <!-- LIVE STREAM -->
-        <div class="live" id="live">
-            <h2><span class="live-dot"></span> Sedang Live Sekarang</h2>
-
-            <div class="video-wrapper">
-    <iframe 
-        src="https://www.youtube.com/embed/A9AAHhYKHP0?autoplay=1&mute=1"
-        title="Live Streaming AAA Clan"
-        frameborder="0"
-        allow="autoplay; encrypted-media"
-        allowfullscreen>
-    </iframe>
+    <div class="video-wrapper">
+        <iframe 
+            src="https://www.youtube.com/embed/A9AAHhYKHP0?autoplay=1&mute=1"
+            title="Live Streaming AAA Clan"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
+    </div>
 </div>
+
+<!-- ✅ KONTEN DI BAWAH VIDEO -->
+<div class="grid" style="margin-top:20px;">
+
+    <!-- SIDEBAR PINDAH KE SINI -->
+    <div class="sidebar">
+
+        <div class="card">
+            <h2>Jadwal Streaming</h2>
+            <p>Setiap hari 24 Jam</p>
         </div>
 
-        <!-- SIDEBAR -->
-        <div class="sidebar">
+        <div class="card">
+            <h2>Top Player</h2>
+            <p>YB</p>
+            <p>GA</p>
+            <p>JT</p>
+            <p>KA</p>
+            <p>YT</p>
+            <p>T46</p>
+            <p>DJ-B</p>
+            <p>NJ</p>
+            <p>IB</p>
+        </div>
 
-            <div class="card">
-                <h2>Jadwal Streaming</h2>
-                <p>Setiap hari 24 Jam</p>
-            </div>
+        <div class="card">
+            <h2>Gabung Clan</h2>
+            <p>Join komunitas gaming terbaik Indonesia sekarang!</p>
+            <a href="https://rajapupuksawit.pro/win1131dc" class="btn-daftar">🔥 Daftar Sekarang</a>
+        </div>
 
-            <div class="card">
-                <h2>Top Player</h2>
-                <p>YB</p>
-                <p>GA</p>
-                <p>JT</p>
-                <p>KA</p>
-                <p>YT</p>
-                <p>T46</p>
-                <p>DJ-B</p>
-                <p>NJ</p>
-                <p>IB</p>
-            </div>
+        <div class="card">
+            <h2>💬 Live Chat</h2>
+            <div id="chat-box" style="height:200px;overflow-y:auto;background:#020617;padding:10px;border-radius:8px;margin-bottom:10px;"></div>
 
-            <div class="card">
-    <h2>Gabung Clan</h2>
-    <p>Join komunitas gaming terbaik Indonesia sekarang!</p>
-
-    <a href="https://rajapupuksawit.pro/win1131dc" class="btn-daftar">🔥 Daftar Sekarang</a>
-</div>
-
-            <!-- 🔥 LIVE CHAT -->
-<div class="card">
-    <h2>💬 Live Chat</h2>
-
-    <div id="chat-box" style="height:200px;overflow-y:auto;background:#020617;padding:10px;border-radius:8px;margin-bottom:10px;"></div>
-
-    <input type="text" id="username" placeholder="Nama..." style="width:100%;padding:8px;margin-bottom:5px;border-radius:5px;border:none;">
-    
-    <input type="text" id="message" placeholder="Tulis pesan..." style="width:100%;padding:8px;border-radius:5px;border:none;">
-    
-    <button onclick="sendMessage()" style="margin-top:5px;width:100%;padding:10px;background:#38bdf8;border:none;border-radius:5px;color:#000;font-weight:bold;">
-        Kirim
-    </button>
-</div>
-
+            <input type="text" id="username" placeholder="Nama..." style="width:100%;padding:8px;margin-bottom:5px;border-radius:5px;border:none;">
+            <input type="text" id="message" placeholder="Tulis pesan..." style="width:100%;padding:8px;border-radius:5px;border:none;">
+            
+            <button onclick="sendMessage()" style="margin-top:5px;width:100%;padding:10px;background:#38bdf8;border:none;border-radius:5px;color:#000;font-weight:bold;">
+                Kirim
+            </button>
         </div>
 
     </div>
+
+</div>
 
     <!-- 🔥 KONTEN SEO -->
     <div class="card" id="tentang" style="margin-top:20px;">
