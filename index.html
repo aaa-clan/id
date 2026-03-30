@@ -81,10 +81,9 @@ nav a:hover {
 
 /* CONTAINER */
 .container {
-    max-width: 1400px; /* LEBIHKAN */
-    width: 100%;
+    max-width: 1500px;
+    width: 95%;
     margin: auto;
-    padding: 20px;
 }
 
 /* TITLE */
@@ -209,6 +208,38 @@ footer {
 }
 .left {
     width: 100%;
+}
+/* FIX TOTAL LAYOUT */
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 1.2fr;
+    gap: 30px;
+    align-items: start;
+}
+
+/* PENTING BANGET */
+.left {
+    width: 100%;
+    display: block;
+}
+
+/* VIDEO FULL */
+.live {
+    width: 100%;
+}
+
+/* VIDEO WRAPPER FIX */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
 }
 </style>
 </head>
