@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -41,40 +42,52 @@
 </script>
 
 <style>
-* {margin:0;padding:0;box-sizing:border-box;}
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    background:#020617;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(180deg, #020617, #020617, #020617);
     color:#fff;
 }
 
 /* HEADER */
 header {
-    background:#0f172a;
-    padding:15px;
+    background: linear-gradient(90deg, #020617, #0f172a);
+    padding:20px;
     text-align:center;
     border-bottom:2px solid #38bdf8;
+    box-shadow:0 0 20px rgba(56,189,248,0.2);
 }
 
-header h1 {color:#38bdf8;}
+header h1 {
+    color:#38bdf8;
+    font-size:32px;
+}
 
 /* NAV */
 nav {
     display:flex;
     justify-content:center;
-    gap:20px;
-    padding:10px;
-    flex-wrap:wrap;
+    gap:25px;
+    padding:12px;
+    background:#020617;
+    border-bottom:1px solid rgba(255,255,255,0.05);
 }
 
 nav a {
-    color:#fff;
+    color:#cbd5f5;
     text-decoration:none;
     font-size:14px;
+    transition:0.3s;
 }
 
-nav a:hover {color:#38bdf8;}
+nav a:hover {
+    color:#38bdf8;
+}
 
 /* CONTAINER */
 .container {
@@ -83,14 +96,26 @@ nav a:hover {color:#38bdf8;}
     padding:20px;
 }
 
-/* GRID DESKTOP */
+/* GRID */
 .grid {
     display:grid;
-    grid-template-columns:2fr 1fr;
+    grid-template-columns:2.2fr 1fr;
     gap:20px;
 }
 
-/* VIDEO */
+/* LIVE */
+.live {
+    background:#020617;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 0 25px rgba(56,189,248,0.15);
+}
+
+.live h2 {
+    margin-bottom:10px;
+    color:#ef4444;
+}
+
 .live iframe {
     width:100%;
     height:500px;
@@ -106,47 +131,65 @@ nav a:hover {color:#38bdf8;}
 
 /* CARD */
 .card {
-    background:#0f172a;
-    padding:15px;
-    border-radius:10px;
+    background:linear-gradient(145deg, #020617, #0f172a);
+    padding:18px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(56,189,248,0.1);
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:translateY(-3px);
+    box-shadow:0 0 25px rgba(56,189,248,0.3);
+}
+
+.card h2 {
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+/* BUTTON */
+.btn-daftar {
+    display:block;
+    text-align:center;
+    margin-top:12px;
+    padding:12px;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color:#000;
+    font-weight:bold;
+    border-radius:8px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn-daftar:hover {
+    transform:scale(1.05);
+}
+
+/* CHAT */
+#chat-box {
+    font-size:13px;
 }
 
 /* FOOTER */
 footer {
     text-align:center;
-    padding:20px;
-    border-top:1px solid #38bdf8;
-    margin-top:30px;
+    padding:25px;
+    border-top:1px solid rgba(255,255,255,0.1);
+    margin-top:40px;
+    color:#94a3b8;
 }
 
-/* 🔥 TABLET */
+/* RESPONSIVE */
 @media(max-width:900px){
     .grid {grid-template-columns:1fr;}
     .live iframe {height:300px;}
 }
 
-/* 🔥 MOBILE */
 @media(max-width:480px){
-    header h1 {font-size:18px;}
+    header h1 {font-size:20px;}
     nav a {font-size:12px;}
     .live iframe {height:220px;}
-}
-.btn-daftar {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-    padding: 12px;
-    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
-    color: #000;
-    font-weight: bold;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.btn-daftar:hover {
-    background: linear-gradient(135deg, #0ea5e9, #38bdf8);
-    transform: scale(1.05);
 }
 </style>
 
