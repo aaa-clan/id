@@ -118,6 +118,11 @@ nav a:hover {
     padding:15px;
     border-radius:12px;
     box-shadow:0 0 40px rgba(255,0,0,0.25);
+
+    /* TAMBAHAN KODE KAMU */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .live h2 {
@@ -128,16 +133,19 @@ nav a:hover {
 
 /* VIDEO RESPONSIVE */
 .video-wrapper {
-    position:relative;
-    width:100%;
-    padding-bottom:56.25%;
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* penting */
+    padding-bottom: 56.25%;
 }
 
 .video-wrapper iframe {
-    position:absolute;
-    width:100%;
-    height:100%;
-    border-radius:12px;
+    position: absolute;
+    top: 0;
+    left: 0; /* WAJIB */
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
 }
 
 /* ================= SIDEBAR ================= */
@@ -253,6 +261,15 @@ footer {
 
     .card {
         padding:12px;
+    }
+
+    /* TAMBAHAN KAMU */
+    .live {
+        padding:10px;
+    }
+
+    .video-wrapper {
+        width: 100%;
     }
 }
 </style>
