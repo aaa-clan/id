@@ -139,7 +139,7 @@ nav a:hover {
     position: relative;
     width: 100%;
     max-width: 100%; /* penting */
-    padding-bottom: 56.25%;
+    padding-bottom: 100%;
 }
 
 .video-wrapper iframe {
@@ -295,26 +295,18 @@ footer {
 
 <h1 class="main-title">Live Streaming AAA Clan Hari Ini</h1>
 
-<div class="grid">
+<div class="live" id="live">
+    <h2>🔴 Sedang Live Sekarang</h2>
 
-    <!-- KIRI (VIDEO BESAR) -->
-    <div class="left">
-
-        <div class="live">
-            <h2>🔴 Sedang Live Sekarang</h2>
-
-            <div class="video-wrapper">
-                <iframe 
-    src="https://www.youtube.com/embed/A9AAHhYKHP0?autoplay=1&mute=1&rel=0"
-    title="AAA Clan Live Streaming"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen>
-</iframe>
-            </div>
-        </div>
-
+    <div class="video-wrapper">
+        <iframe 
+            src="https://www.youtube.com/embed/A9AAHhYKHP0?autoplay=1&mute=1&rel=0"
+            allowfullscreen>
+        </iframe>
     </div>
+</div>
+
+<div class="grid">
 
     <!-- KANAN (SIDEBAR) -->
     <div class="sidebar">
