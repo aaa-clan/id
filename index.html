@@ -49,23 +49,22 @@
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(180deg, #020617, #020617, #020617);
-    color:#fff;
+    font-family:'Segoe UI', sans-serif;
+    background:#020617;
+    color:#e2e8f0;
 }
 
 /* HEADER */
 header {
-    background: linear-gradient(90deg, #020617, #0f172a);
+    background:#020617;
     padding:20px;
     text-align:center;
-    border-bottom:2px solid #38bdf8;
-    box-shadow:0 0 20px rgba(56,189,248,0.2);
+    border-bottom:1px solid #1e293b;
 }
 
 header h1 {
     color:#38bdf8;
-    font-size:32px;
+    font-size:28px;
 }
 
 /* NAV */
@@ -75,14 +74,12 @@ nav {
     gap:25px;
     padding:12px;
     background:#020617;
-    border-bottom:1px solid rgba(255,255,255,0.05);
 }
 
 nav a {
     color:#cbd5f5;
     text-decoration:none;
     font-size:14px;
-    transition:0.3s;
 }
 
 nav a:hover {
@@ -96,30 +93,37 @@ nav a:hover {
     padding:20px;
 }
 
+/* TITLE */
+.container > h1 {
+    text-align:center;
+    margin-bottom:20px;
+    color:#fff;
+}
+
 /* GRID */
 .grid {
     display:grid;
-    grid-template-columns:2.2fr 1fr;
+    grid-template-columns:2fr 1fr;
     gap:20px;
 }
 
 /* LIVE */
 .live {
     background:#020617;
-    padding:15px;
-    border-radius:12px;
-    box-shadow:0 0 25px rgba(56,189,248,0.15);
 }
 
 .live h2 {
-    margin-bottom:10px;
     color:#ef4444;
+    margin-bottom:10px;
+    font-size:18px;
 }
 
+/* VIDEO */
 .live iframe {
     width:100%;
-    height:500px;
-    border-radius:12px;
+    height:520px;
+    border-radius:10px;
+    background:#000;
 }
 
 /* SIDEBAR */
@@ -131,21 +135,22 @@ nav a:hover {
 
 /* CARD */
 .card {
-    background:linear-gradient(145deg, #020617, #0f172a);
+    background:#0f172a;
     padding:18px;
-    border-radius:12px;
-    box-shadow:0 0 15px rgba(56,189,248,0.1);
-    transition:0.3s;
-}
-
-.card:hover {
-    transform:translateY(-3px);
-    box-shadow:0 0 25px rgba(56,189,248,0.3);
+    border-radius:10px;
+    border:1px solid #1e293b;
 }
 
 .card h2 {
-    margin-bottom:10px;
     color:#38bdf8;
+    margin-bottom:10px;
+}
+
+/* TEXT FIX */
+.card p {
+    color:#e2e8f0;
+    font-size:14px;
+    line-height:1.6;
 }
 
 /* BUTTON */
@@ -154,42 +159,85 @@ nav a:hover {
     text-align:center;
     margin-top:12px;
     padding:12px;
-    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    background:#38bdf8;
     color:#000;
     font-weight:bold;
     border-radius:8px;
     text-decoration:none;
-    transition:0.3s;
-}
-
-.btn-daftar:hover {
-    transform:scale(1.05);
 }
 
 /* CHAT */
 #chat-box {
-    font-size:13px;
+    background:#020617;
+    color:#fff;
+}
+
+/* INPUT */
+input {
+    background:#020617;
+    color:#fff;
 }
 
 /* FOOTER */
 footer {
     text-align:center;
-    padding:25px;
-    border-top:1px solid rgba(255,255,255,0.1);
+    padding:20px;
+    border-top:1px solid #1e293b;
     margin-top:40px;
     color:#94a3b8;
 }
 
-/* RESPONSIVE */
+/* ========================= */
+/* 📱 TABLET */
+/* ========================= */
 @media(max-width:900px){
-    .grid {grid-template-columns:1fr;}
-    .live iframe {height:300px;}
+    .grid {
+        grid-template-columns:1fr;
+    }
+
+    .live iframe {
+        height:300px;
+    }
 }
 
+/* ========================= */
+/* 📱 MOBILE */
+/* ========================= */
 @media(max-width:480px){
-    header h1 {font-size:20px;}
-    nav a {font-size:12px;}
-    .live iframe {height:220px;}
+
+    header h1 {
+        font-size:20px;
+    }
+
+    .container > h1 {
+        font-size:20px;
+    }
+
+    nav {
+        gap:15px;
+    }
+
+    .live iframe {
+        height:220px;
+    }
+
+    .card {
+        padding:15px;
+    }
+
+    .card h2 {
+        font-size:16px;
+    }
+
+    .card p {
+        font-size:13px;
+    }
+}
+ul {
+    padding-left:20px;
+}
+li {
+    margin-bottom:5px;
 }
 </style>
 
@@ -216,7 +264,7 @@ footer {
     <div class="grid">
 
         <!-- LIVE STREAM -->
-        <div class="live" id="live">
+        <div class="live" id="live" style="margin-bottom:15px;">
             <h2>🔴 Sedang Live Sekarang</h2>
 
             <iframe 
@@ -238,15 +286,17 @@ footer {
 
             <div class="card">
                 <h2>Top Player</h2>
-                <p>YB</p>
-                <p>GA</p>
-                <p>JT</p>
-                <p>KA</p>
-                <p>YT</p>
-                <p>T46</p>
-                <p>DJ-B</p>
-                <p>NJ</p>
-                <p>IB</p>
+                <ul>
+                    <li>YB</li>
+                    <li>GA</li>
+                    <li>JT</li>
+                    <li>KA</li>
+                    <li>YT</li>
+                    <li>T46</li>
+                    <li>DJ-B</li>
+                    <li>NJ</li>
+                    <li>IB</li>
+                </ul>
             </div>
 
             <div class="card">
