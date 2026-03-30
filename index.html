@@ -47,7 +47,7 @@
 /* BODY */
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: #020617;
+    background: radial-gradient(circle at top, #020617, #020617 60%, #000);
     color:#fff;
 }
 
@@ -81,9 +81,10 @@ nav a:hover {
 
 /* CONTAINER */
 .container {
-    max-width:1200px;
-    margin:auto;
-    padding:20px;
+    max-width: 1400px; /* LEBIHKAN */
+    width: 100%;
+    margin: auto;
+    padding: 20px;
 }
 
 /* TITLE */
@@ -95,17 +96,19 @@ nav a:hover {
 
 /* GRID */
 .grid {
-    display:grid;
-    grid-template-columns: 2fr 1fr;
-    gap:20px;
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 25px;
+    align-items: start;
 }
 
 /* VIDEO */
 .live {
+    width: 100%;
     background:#020617;
     padding:15px;
     border-radius:12px;
-    box-shadow:0 0 20px rgba(56,189,248,0.2);
+    box-shadow: 0 0 30px rgba(255,0,0,0.2);
 }
 
 .live h2 {
@@ -139,6 +142,7 @@ nav a:hover {
     padding:15px;
     border-radius:10px;
     border:1px solid rgba(56,189,248,0.2);
+    box-shadow: 0 0 20px rgba(56,189,248,0.15);
 }
 
 .card h2 {
@@ -203,7 +207,9 @@ footer {
         font-size:22px;
     }
 }
-
+.left {
+    width: 100%;
+}
 </style>
 </head>
 
