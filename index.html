@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -196,37 +197,6 @@ nav a:hover {
     transform:scale(1.05);
 }
 
-/* ================= CHAT ================= */
-#chat-box {
-    height:220px;
-    overflow-y:auto;
-    background:#000;
-    padding:10px;
-    border-radius:8px;
-    margin-bottom:10px;
-}
-
-/* INPUT */
-input {
-    width:100%;
-    padding:10px;
-    margin-top:5px;
-    border:none;
-    border-radius:6px;
-}
-
-/* BUTTON CHAT */
-button {
-    width:100%;
-    margin-top:5px;
-    padding:10px;
-    background:#38bdf8;
-    border:none;
-    border-radius:6px;
-    font-weight:bold;
-    cursor:pointer;
-}
-
 /* ================= FOOTER ================= */
 footer {
     text-align:center;
@@ -326,16 +296,6 @@ footer {
             <a href="#" class="btn">Daftar Sekarang</a>
         </div>
 
-        <div class="card">
-            <h2>Live Chat</h2>
-
-            <div id="chat-box"></div>
-
-            <input id="username" placeholder="Nama...">
-            <input id="message" placeholder="Tulis pesan...">
-            <button onclick="sendMessage()">Kirim</button>
-        </div>
-
     </div>
 
 </div>
@@ -355,33 +315,6 @@ footer {
 <footer>
     © 2026 AAA Clan
 </footer>
-
-<script>
-async function loadChat() {
-    const res = await fetch("chat.php");
-    const data = await res.text();
-    document.getElementById("chat-box").innerHTML = data;
-}
-
-async function sendMessage() {
-    const username = document.getElementById("username").value;
-    const message = document.getElementById("message").value;
-
-    if(!username || !message) return alert("Isi dulu!");
-
-    await fetch("chat.php", {
-        method: "POST",
-        headers: {"Content-Type":"application/x-www-form-urlencoded"},
-        body: `username=${username}&message=${message}`
-    });
-
-    document.getElementById("message").value="";
-    loadChat();
-}
-
-setInterval(loadChat,2000);
-loadChat();
-</script>
 
 </body>
 </html>
